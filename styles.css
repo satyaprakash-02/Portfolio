@@ -330,7 +330,7 @@ nav .bi {
 @media only screen and (max-width: 600px) {
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 50%;
         font-size: 16px;
     }
 
