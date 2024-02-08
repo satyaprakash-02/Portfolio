@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+            <p>Satyaprakash</p>
+            <div class="header-text">
+                <p>A Programmer,<br>A Software Engineer</p>
+                <h1>Hi, I'm <span>Satyaprakash Vatsya</span><br> from India</h1>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ------------------About-------------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user1.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="about-text">
+                        Hello there! I'm an aspiring coder and a software engineering student.
+                        Despite being a newcomer to the professional scene, 
+                        I bring a strong passion for coding and a determination to learn and grow. Eager to apply my skills in practical settings,
+                        I am open to opportunities that allow me to contribute and gain hands-on experience. 
+                        Let's connect and explore the exciting journey of coding together!
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C++, Java & Python Programming</span><br>Programming Languages</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            
+                            <li><span>SQL Language</span><br>Database Management</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>Matriculation from Vivekananda Central School,Hazaribagh,Jharkhand <br> Percentage-94%</li>
+                            <li><span>2021</span><br>Intermediate from Vivekananda Central School,Hazaribagh,Jharkhand <br> Percentage-96%</li>
+                            <li><span>2021-Present</span><br>BE-CSE from Chandigarh University,Mohali,Punjab <br> Cgpa-8.36</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------Projects------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work1.jpg">
+                    <div class="layer">
+                        <h3>Virtual Assistant using Python</h3>
+                        <p>Associated with CHANDIGARH UNIVERSITY<br><br>
+                        Virtual Assistant Using Python helps in completing daily tasks with ease and effectiveness. 
+                        It is a voice-based assistant made with the help of the Python programming language, with whom we can interact easily to complete tasks effectively.</p>
+                        <a href="https://github.com/satyaprakash-02/virtual-assistant-using-python" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.jpg">
+                    <div class="layer">
+                        <h3>Drowsiness Detection System</h3>
+                        <p>Associated with CHANDIGARH UNIVERSITY<br><br>
+
+                            This system is designed to prevent road accidents caused by driver sleepiness. 
+                            It uses a webcam to detect the driver’s facial expression and alerts them if any signs of sleepiness are detected. This can help drivers stay alert and avoid accidents.
+                            This system is designed to prevent road accidents caused by driver sleepiness.</p>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.jpg">
+                    <div class="layer">
+                        <h3>Online Shopping App<br>(Amazon Clone)</h3>
+                        <p>Associated with CHANDIGARH UNIVERSITY<br><br>
+                            My Amazon clone project is a web development endeavor aimed at replicating the functionality and user experience of the popular e-commerce platform Amazon.
+                            Leveraging technologies like HTML, CSS, and JavaScript, the project seeks to recreate key features such as product listings, user authentication.</p>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                          </svg></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/satyaprakash-02?tab=repositories" class="btn" target="_blank">See more</a>
+        </div>
+    </div>
+
+    <!-- ----------------------Contact------------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="bi bi-send"></i> satyaprakash682002@gmail.com</p>
+                    <p><i class="bi bi-telephone-fill"></i> +91-9608296149</p>
+                    <div class="social-icons">
+                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href="satyaprakash_vatsya"><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/satyaprakash-vatsya-345822223?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnseixxK8RJCjXUrh9usxhQ%3D%3D" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                    <a href="./images/Resume.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" method="POST">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️ Satyaprakash. Made with <i class="bi bi-suit-heart-fill"></i></p>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwk1WDO2iLk9iHVsQQVMzz2yeFcZ8eOkt3PRWqCiLrjLoTRnlVGXebYTCDa7qrhW6M/exec';
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully!"
+                setTimeout(()=>{
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
